@@ -7,15 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+    <div class="row bg-dark">
+      <div class="col-md-12 jumbotron text-center white-text" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/E._coli_Bacteria_%2816578744517%29.jpg)">
+        <h1 class="white-text">Belly Button Biodiversity Dashboard</h1>
+        <p class="white-text">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
@@ -24,6 +25,8 @@
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <!-- when a change takes place in the dropdown menu, the optionChanged() function is called -->
+          <!-- this.value returns thes the value attribute of the current dropdown menu selection -->
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -46,11 +49,11 @@
     </div>
   </div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="samples.js"></script>
-  <script src="charts.js"></script>
-  
+  <script src="sample.js"></script>
+  <script src="static/js/charts.js"></script>
 
 </body>
 
